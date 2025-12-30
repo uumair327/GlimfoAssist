@@ -20,7 +20,9 @@ import { Resend } from 'resend';
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 // Your verified email that will receive all contact form submissions
-const NOTIFICATION_EMAIL = 'help.glimfo@gmail.com';
+// NOTE: With Resend free tier (onboarding@resend.dev), this MUST be 
+// the email you signed up to Resend with!
+const NOTIFICATION_EMAIL = 'uumair327@gmail.com';
 
 export default async function handler(req, res) {
   // CORS headers
