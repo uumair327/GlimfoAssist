@@ -5,6 +5,10 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  // Base path for GitHub Pages - change to your repo name if not using custom domain
+  // e.g., base: "/GlimfoAssist/" for https://username.github.io/GlimfoAssist/
+  // Use "/" if using custom domain like glimfoassist.com
+  base: "/",
   server: {
     host: "::",
     port: 8080,
