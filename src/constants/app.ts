@@ -28,11 +28,8 @@ export const BRAND = {
 export const APP_CONFIG = {
   /** Maximum content width for consistent layout across pages */
   maxWidth: "1400px",
-  /** 
-   * Email service API endpoint for contact form submissions
-   * Deploy the /api folder to Vercel separately and update this URL
-   */
-  apiEndpoint: "https://glimfoassist-api.vercel.app/api/send-email",
+  /** Email service API endpoint - relative path works on Vercel */
+  apiEndpoint: "/api/send-email",
 } as const;
 
 export const SEO_CONFIG = {
