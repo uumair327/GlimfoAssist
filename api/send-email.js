@@ -10,11 +10,17 @@
  * 
  * SETUP:
  * 1. Add RESEND_API_KEY to Vercel environment variables
+ * 
+ * NOTE: With Resend free tier using onboarding@resend.dev, you can only
+ * send to your own verified email. To send to any email, verify your domain.
  */
 
 import { Resend } from 'resend';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
+
+// Your verified email that will receive all contact form submissions
+const NOTIFICATION_EMAIL = 'help.glimfo@gmail.com';
 
 export default async function handler(req, res) {
   // CORS headers
@@ -32,17 +38,20 @@ export default async function handler(req, res) {
 
   const { to, subject, text, html } = req.body;
 
-  if (!to || !subject || (!text && !html)) {
-    return res.status(400).json({ error: 'Missing required fields: to, subject, and text/html' });
+  if (!subject || (!text && !html)) {
+    return res.status(400).json({ error: 'Missing required fields: subject and text/html' });
   }
 
   try {
+    // Always send to the notification email (your verified email)
+    // This works with Resend free tier
     const { data, error } = await resend.emails.send({
       from: 'GlimfoAssist <onboarding@resend.dev>',
-      to: Array.isArray(to) ? to : [to],
+      to: [NOTIFICATION_EMAIL],
       subject,
       text,
       html,
+      reply_to: req.body.replyTo || undefined, // Allow reply to the form submitter
     });
 
     if (error) {

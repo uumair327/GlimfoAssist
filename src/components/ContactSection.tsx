@@ -63,6 +63,7 @@ const ContactSection = () => {
             subject: `New Project Requirement - ${formData.service} from ${formData.name}`,
             text: textContent,
             html: htmlContent,
+            replyTo: formData.email, // Allow direct reply to submitter
           }),
         })
       );
