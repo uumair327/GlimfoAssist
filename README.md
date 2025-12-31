@@ -2,7 +2,7 @@
 
 A modern, SEO-optimized website for technology-focused academic and professional services. Built with React, TypeScript, and Tailwind CSS.
 
-**Live Site**: [techink.dev](https://techink.dev)
+**Live Site**: [Glimfo-assist.dev](https://glimfo-assist.vercel.app/)
 
 ## 🚀 Features
 
@@ -56,7 +56,7 @@ A modern, SEO-optimized website for technology-focused academic and professional
 
 ```bash
 # Clone the repository
-git clone https://github.com/Gunjankadam/TechInk.git
+git clone https://github.com/uumair327/GlimfoAssist
 cd TechInk
 
 # Install dependencies
@@ -101,7 +101,7 @@ fetch("https://custom-mail-sender.vercel.app/api/send", ...)
 Update WhatsApp number in `src/components/WhatsAppFloat.tsx`:
 
 ```typescript
-const whatsappNumber = "919876543210"; // Your WhatsApp number
+const whatsappNumber = "919766447298"; // Your WhatsApp number
 ```
 
 ## 📁 Project Structure
@@ -239,10 +239,10 @@ This project is private and proprietary.
 
 ## 📞 Contact
 
-- **Email**: kadamgunjan27@gmail.com | kasammapara13@gmail.com
-- **Phone**: +91 8591132892 | +91 8097158081
-- **Website**: [techink.dev](https://techink.dev)
-- **GitHub**: [@Gunjankadam/TechInk](https://github.com/Gunjankadam/TechInk)
+- **Email**: uumair327@gmail.com
+- **Phone**: +91 9766447298
+- **Website**: [techink.dev](https://GlimfoAssist.dev)
+- **GitHub**: [@Gunjankadam/TechInk](https://github.com/uumair327/GlimfoAssist)
 
 ## 🙏 Acknowledgments
 
@@ -253,4 +253,4 @@ This project is private and proprietary.
 
 ---
 
-**Built with ❤️ by TechInk Team**
+**Built with ❤️ by GlimfoAssist Team**
