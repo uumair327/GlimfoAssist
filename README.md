@@ -242,7 +242,7 @@ This project is private and proprietary.
 - **Email**: uumair327@gmail.com
 - **Phone**: +91 9766447298
 - **Website**: [techink.dev](https://GlimfoAssist.dev)
-- **GitHub**: [@Gunjankadam/TechInk](https://github.com/uumair327/GlimfoAssist)
+- **GitHub**: [@uumair327/GlimfoAssist](https://github.com/uumair327/GlimfoAssist)
 
 ## 🙏 Acknowledgments
 
